@@ -22,19 +22,63 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-
     <!-- SCREEN -->
-      <div class="screen" >
-        <form action="" class="form">
-          <div class="screen-content">
-            <label for="" class="text-light me-5">Enter a movie title:</label>
-            <input class="p-1" type="text" placeholder="matrix">
-          </div>
-        </form>
-      </div>
+    <div class="screen">
+      <form action="" class="form">
+        <div class="screen-content">
+          <label for="" class="text-light me-5">Enter a movie title:</label>
+          <input class="p-1" type="text" placeholder="matrix" />
+          <button class="text-bg-info py-2 m-2 btn text-light" type="submit">
+            Search
+          </button>
+        </div>
+
+        <!-- error message -->
+        <div class="d-flex justify-content-center m-2">
+          <p class="text-light text-bg-danger px-2">Hata</p>
+        </div>
+      </form>
+    </div>
 
     <!-- Movie Info -->
+    <section class="movieInfo light d-block py-3">
+      <div class="container">
+        <article class="postcard light blue">
+          <a href="" class="postcard_img_link">
+            <img
+              class="movieImg float-end"
+              src="https://picsum.photos/1000/1000"
+              style="width: 200px"
+              alt="movie image"
+            />
+          </a>
+          <div class="postcard_text t-dark">
+            <h1 class="postcard_title blue">Movie Title</h1>
+            <div class="postcar_subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                  <i class="releasetime fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                </time>
+            </div>
+            <div class="postcard_bar"></div>
+            <div class="postcar_preview">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus incidunt a, qui saepe temporibus, eius quasi praesentium sunt nemo magni excepturi tempora dolorem quae voluptas voluptate. Corrupti impedit modi porro?
+            </div>
+            <ul class="postcard_tagbox">
+              <li class="genre"> <i class="fas fa-tag mr-2"></i> genre</li>
+              <li class="duration"> <i class="fas fa-clock mr-2"></i> 55 min</li>
+              <li class="tag_item play blue">
+                <a href="">
+                  <i class="trailer fas fa-play mr-2"></i> Play Trailer
+                </a>
+              </li>
+            </ul>
+          </div>
 
+
+
+        </article>
+      </div>
+    </section>
 
     <!-- SEATS  -->
     <div class="container container-fluid">
